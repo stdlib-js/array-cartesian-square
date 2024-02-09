@@ -35,19 +35,32 @@ limitations under the License.
 
 > Return the [Cartesian square][cartesian-product].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-cartesian-square
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import cartesianSquare from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-cartesian-square@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-cartesian-square/tags). For example,
-
-```javascript
-import cartesianSquare from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-cartesian-square@v0.1.0-esm/index.mjs';
+var cartesianSquare = require( '@stdlib/array-cartesian-square' );
 ```
 
 #### cartesianSquare( x )
@@ -84,23 +97,14 @@ var out = cartesianSquare( [] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@esm/index.mjs';
-import cartesianSquare from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-cartesian-square@esm/index.mjs';
+```javascript
+var linspace = require( '@stdlib/array-linspace' );
+var cartesianSquare = require( '@stdlib/array-cartesian-square' );
 
 var x = linspace( 0, 5, 6 );
 
 var out = cartesianSquare( x );
 // returns [ [ 0, 0 ], [ 0, 1 ], ..., [ 5, 4 ], [ 5, 5 ] ]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -110,6 +114,13 @@ var out = cartesianSquare( x );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-cartesian-power`][@stdlib/array/cartesian-power]</span><span class="delimiter">: </span><span class="description">return the Cartesian power.</span>
+-   <span class="package-name">[`@stdlib/array-cartesian-product`][@stdlib/array/cartesian-product]</span><span class="delimiter">: </span><span class="description">return the Cartesian product.</span>
 
 </section>
 
@@ -124,7 +135,7 @@ var out = cartesianSquare( x );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -154,8 +165,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-cartesian-square.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-cartesian-square
 
-[test-image]: https://github.com/stdlib-js/array-cartesian-square/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/array-cartesian-square/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/array-cartesian-square/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-cartesian-square/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-cartesian-square/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-cartesian-square?branch=main
@@ -188,6 +199,14 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-cartesian-square/main/LICENSE
 
 [cartesian-product]: https://en.wikipedia.org/wiki/Cartesian_product
+
+<!-- <related-links> -->
+
+[@stdlib/array/cartesian-power]: https://github.com/stdlib-js/array-cartesian-power
+
+[@stdlib/array/cartesian-product]: https://github.com/stdlib-js/array-cartesian-product
+
+<!-- </related-links> -->
 
 </section>
 
